@@ -1,11 +1,9 @@
-import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Testimonial1 from "../../assets/img/testimonial-1.jpg";
 import Testimonial2 from "../../assets/img/testimonial-2.jpg";
 import Testimonial3 from "../../assets/img/testimonial-3.jpg";
 import Testimonial4 from "../../assets/img/testimonial-4.jpg";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const responsive = {
   desktop: {
@@ -26,18 +24,7 @@ const responsive = {
 };
 
 const Testimonial = () => {
-  const CustomLeftArrow = ({ onClick }: { onClick: () => void }) => (
-    <button className="carousel-custom-arrow custom-arrow-left" onClick={onClick}>
-      <IoIosArrowBack />
-    </button>
-  );
-
-  const CustomRightArrow = ({ onClick }: { onClick: () => void }) => (
-    <button className="carousel-custom-arrow custom-arrow-right" onClick={onClick}>
-      <IoIosArrowForward />
-    </button>
-  );
-
+ 
   return (
     <div>
       {/* Testimonial Start */}
@@ -54,7 +41,6 @@ const Testimonial = () => {
             partialVisible={true}
             showDots={false}
             arrows={true}
-            
           >
             <div className="testimonial-item bg-white text-center border p-4">
               <img

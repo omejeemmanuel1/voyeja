@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Login.css";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const Login = () => {
           </div>
         </div>
         <div className="form-field">
-          <form action="/users/login" method="POST" className="form">
+          <form className="form">
             <div className="form-body">
               <label htmlFor="email">
                 <i

@@ -1,4 +1,4 @@
-import React from "react"
+
 import Destination1 from "../../assets/img/destination-1.jpg"
 import Destination2 from "../../assets/img/destination-2.jpg"
 import Destination3 from "../../assets/img/destination-3.jpg"
