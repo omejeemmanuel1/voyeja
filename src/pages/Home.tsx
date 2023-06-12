@@ -7,7 +7,7 @@ import Process from "../components/Process/Process"
 import Team from "../components/Team/Team"
 import Testimonial from "../components/Testimaonia/Testimonial"
 import Footer from "../components/Footer/Footer"
-import React from "react"
+
 const Home = () => {
   return (
     <div>

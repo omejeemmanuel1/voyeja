@@ -1,5 +1,4 @@
 
-import React from "react"
 import Footer1 from "../../assets/img/package-1.jpg"
 import Footer2 from "../../assets/img/package-2.jpg"
 import Footer3 from "../../assets/img/package-3.jpg"

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import About from "../../assets/img/about.jpg"; 
 
 const AboutUs = () => {
