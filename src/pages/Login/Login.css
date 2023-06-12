@@ -1,0 +1,457 @@
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://as2.ftcdn.net/v2/jpg/02/65/26/83/1000_F_265268314_LmykO3vrtzmh3TQbBdnxj9vUczqqJXCU.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the last value to control the darkness */
+  background-blend-mode: multiply;
+  z-index: -1;
+}
+
+.box {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  padding: 20px;
+  width: 350px;
+  height: 50vh;
+}
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  line-height: 1.5;
+}
+
+.form-container {
+  display: flex;
+  padding: 5px;
+  height: 100%;
+  margin: 10px;
+}
+
+.form-box {
+  width: 600px;
+  height: 80vh;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-left: 50px;
+}
+
+.form-field {
+  width: 600px;
+  box-shadow: 0 0 5px 2px #fff;
+  height: auto;
+  margin-left: 50px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  border-radius: 20px;
+}
+
+.form {
+  padding: 30px;
+}
+
+.form-body {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form-body label {
+  padding-top: 5px;
+}
+
+.form-body input {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(47, 136, 224);
+}
+
+.upbar {
+  box-shadow: inset 0 -5px 5px -5px #fff;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  width: 100%;
+  color: #fff;
+}
+
+.dform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+  height: 30vh;
+  margin-top: 0%;
+}
+
+.formB {
+  flex-basis: calc(25% - 1em);
+  margin: 0.5em;
+}
+
+.formB label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.formB input[type="text"],
+.formB input[type="number"],
+.formB input[type="file"] {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+}
+
+.formB input[type="file"] {
+  padding: 0;
+  overflow: hidden;
+}
+
+.formB input[type="file"]::-webkit-file-upload-button {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.formB input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #555;
+}
+
+.formB input[type="file"]::-webkit-file-upload-button:active {
+  background-color: #222;
+}
+
+.dbutton {
+  width: 30%;
+  height: 40px;
+  background-color: #1e3a8a;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  position: relative;
+  left: 35%;
+}
+
+.dmain {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.dbox {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+
+.dbox:hover .dtitle {
+  transform: translateY(-100%);
+}
+
+.dbox:hover .dprice {
+  transform: translateY(100%);
+}
+
+.dbox:hover .ddescription {
+  transform: translateY(0);
+}
+
+.dtitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.ddescription {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dbox:hover .ddescription {
+  opacity: 1;
+}
+
+.dimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dprice {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.dactions {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.dactions a {
+  margin-left: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.dactions a:hover {
+  color: #ccc;
+}
+.header {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+/* slideshow */
+.slideshow {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: 5px 5px -5px #fff;
+  border-bottom: 2px solid #fff;
+  z-index: -1;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+/* end slide */
+
+/* Modal form end */
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.movie-trailer {
+  flex: 1 1 50%;
+}
+
+.movie-trailer video {
+  display: block;
+  border-radius: 5px;
+}
+
+.movie-description {
+  flex: 1 1 50%;
+  padding-left: 20px;
+}
+
+.movie-description h2 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.movie-description p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.btn-watch,
+.btn-download {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-watch:hover,
+.btn-download:hover {
+  background-color: navy;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/thorb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* or contain */
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .form-container {
+    padding: 5px;
+    height: 100vh;
+  }
+
+  .form-box {
+    height: 80vh;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .form-field {
+    width: 500px;
+    box-shadow: 0 0 5px 2px #fff;
+    height: auto;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    border-radius: 20px;
+    margin-right: 50px;
+    font-size: 13px;
+  }
+
+  .form {
+    padding: 30px;
+  }
+
+  .form-body {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .form-body label {
+    padding-top: 5px;
+  }
+
+  .form-body input {
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  .button {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .dbox {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .formB label {
+    display: block;
+  }
+}

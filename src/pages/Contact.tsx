@@ -116,9 +116,9 @@ const Contact = () => {
             Contact
           </Link>
         </div>
-        <a href="" className="btn btn-primary rounded-pill py-2 px-4">
-          Register
-        </a>
+        <Link to="/login" className="btn btn-primary rounded-pill py-2 px-4">
+          Login
+        </Link>
       </div>
     </nav>
     <div className="container-fluid bg-primary py-5 mb-5 hero-header">
